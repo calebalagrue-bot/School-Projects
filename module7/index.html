@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="SWift Clothing." />
+    <link rel="stylesheet" href="css/module7.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Hedvig+Letters+Sans&family=Hedvig+Letters+Serif:opsz@12..24&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>SWift Clothing</title>
+  </head>
+  <body class="body_content">
+    <header class="header_dependent_class">
+      <h1>SWift Clothing</h1>
+      <figure>
+        <img src="images/logo.jpg" alt="Photo of SWift Clothing logo" />
+      </figure>
+      <div class="flexnavc">
+        <nav>
+          <ul>
+            <li><a href="index.html">SWift Clothing</a></li>
+            <li><a href="sportsupplies.html">Sports Supplies</a></li>
+            <li><a href="Outdoors.html">Outdoors Items</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="mailto:clagrue@mymail.tstc.edu">My Email</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="pargrids">
+        <div class="gridchilden">
+          <section>
+            <h2>SWift Items</h2>
+
+            <!-- Shirt Grid -->
+            <form>
+              <div class="shirtgrid">
+                <!-- Column 1 -->
+                <div>
+                  <img src="images/SWift-T (1).jpg" alt="SWift White T-shirt" />
+                  <label
+                    ><input type="checkbox" id="tshirt" value="25" /> SWift
+                    White T-Shirt ($25)</label
+                  >
+                </div>
+                <div>
+                  <img
+                    src="images/SWift_Dyed.jpg"
+                    alt="SWift Dyed Black and Grey T-shirt"
+                  />
+                  <label
+                    ><input type="checkbox" id="dyedshirt" value="40" /> SWift
+                    Dyed Shirt ($40)</label
+                  >
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                  <img src="images/SWift_Jacket.jpg" alt="SWift Jacket" />
+                  <label
+                    ><input type="checkbox" id="jacket" value="80" /> SWift
+                    Jacket ($80)</label
+                  >
+                </div>
+                <div>
+                  <img src="images/SWift_Jersey.jpg" alt="SWift Jersey" />
+                  <label
+                    ><input type="checkbox" id="jersey" value="120" /> SWift
+                    Jersey ($120)</label
+                  >
+                </div>
+
+                <!-- Column 3 -->
+                <div>
+                  <img
+                    src="images/SWift_Long_Sleeve.jpg"
+                    alt="SWift Everyday Long Sleeve"
+                  />
+                  <label
+                    ><input type="checkbox" id="longsleeve" value="30" /> SWift
+                    Everyday Long Sleeve ($30)</label
+                  >
+                </div>
+                <div>
+                  <img
+                    src="images/SWift_Hoodie.jpg"
+                    alt="SWift Everyday Hoodie"
+                  />
+                  <label
+                    ><input type="checkbox" id="hoodie" value="30" /> SWift
+                    Everyday Hoodie ($30)</label
+                  >
+                </div>
+              </div>
+            </form>
+            <!-- End of Shirt Grid -->
+          </section>
+        </div>
+
+        <!-- Form -->
+        <form id="orderForm" class="form-container">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" /><br />
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" /><br />
+
+          <label for="standard">Standard ($10)</label>
+          <input type="radio" id="standard" name="shipping" value="10" /><br />
+
+          <label for="express">Express ($15)</label><br />
+          <input type="radio" id="express" name="shipping" value="15" /><br />
+
+          <label for="comments">Comments:</label>
+          <textarea id="comments"></textarea><br />
+
+          <input type="submit" id="submitBtn" value="Submit" />
+          <input type="reset" id="resetBtn" value="Reset" />
+        </form>
+      </div>
+      <div id="receiptContainer"></div>
+      <!-- Receipt container -->
+    </main>
+
+    <footer>
+      <p>
+        By.Caleb A LaGrue<br />
+        <span>&copy; SWift Clothing</span><br />
+        <a href="mailto:clagrue@mymail.tstc.edu">clagrue@mymail.tstc.edu</a
+        ><br />
+      </p>
+    </footer>
+    <script src="scripts/module7.js"></script>
+    <!-- Include your JavaScript file -->
+  </body>
+</html>

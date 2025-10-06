@@ -1,0 +1,263 @@
+/* #F4F4F6 = Anti-flash white color
+#9999A1 = Taupe gray footer p, form, and nav
+#121113 = Black text p, title, form names
+#E6E6E9 Platinum visited links*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~body~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+body {
+  background-color: #f4f4f6;
+  max-width: 1080px;
+  max-height: 1224px;
+}
+
+.body_content {
+  margin-left: auto;
+  margin-right: auto;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~header~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~nav~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+nav {
+  font-size: 17px;
+  font-family: "Bree Serif", serif;
+  /* Serif fonts have small lines or strokes that extend from the ends of characters */
+  border-color: #121113;
+}
+
+nav ul {
+  justify-content: center;
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  /* to generate space around an element's content, inside of any defined borders */
+  padding: 4px;
+}
+
+nav a {
+  color: #1a1c1c;
+  border-color: #121113;
+}
+
+nav a:link {
+  border-style: solid;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 20px;
+  background-color: #9999a1;
+  /* use the CSS background-color property */
+  border-color: #121113;
+
+  /* border-radius CSS property is what adds the rounded corners */
+}
+
+nav a:visited {
+  color: #e6e6e9;
+}
+
+nav a:active {
+  color: #222725;
+}
+
+.flexnavc {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.flexit {
+  box-sizing: border-box;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~links~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* used to mark the key items on the web page */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+footer {
+  background-color: #9999a1;
+  color: #9999a1;
+  font-family: "Hedvig Letters Serif", serif;
+}
+
+footer a:link {
+  color: #1a1c1c;
+  text-decoration-style: solid;
+}
+footer a:visited {
+  color: #829cbc;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~p, h,~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+p {
+  font-family: "Hedvig Letters Sans", sans-serif;
+  background-color: #9999a1;
+  color: #121113;
+}
+
+h1 {
+  font-size: 25px;
+  font-family: "Hedvig Letters Serif", serif;
+  text-align: center;
+  color: #56604f;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Hedvig Letters Serif", serif;
+  text-align: center;
+  color: #56604f;
+}
+.pargrids {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.gridchilden {
+  padding: 10px;
+}
+
+.shirtgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px; /* Gap between grid items */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.shirtgrid img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+}
+
+.shirtgrid label {
+  text-align: center; /* Center the label text */
+  margin-top: 10px; /* Add some space between image and label */
+  font-family: "Bree Serif", serif; /* Use Bree Serif font */
+  color: #222725; /* Text color */
+  font-size: 17px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 600px; /* Set a maximum width for the form container */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.form-container label {
+  margin-top: 10px; /* Add some space between form elements */
+  font-family: "Bree Serif", serif;
+  color: #121113;
+  font-size: 20px;
+}
+.form-container input,
+.form-container textarea {
+  margin-top: 15px; /* Add some space between form elements */
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~receipt code~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Add styles for the receipt container and its contents */
+/* Add styles for the receipt container and its contents */
+/* Add styles for the receipt container and its contents */
+.receipt {
+  border: 2px solid #9999a1; /* Adjust as needed */
+  padding: 20px;
+  margin-top: 20px;
+  font-family: "Bree Serif", serif;
+  color: #121113;
+  background-color: transparent !important;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~form~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+form {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12px;
+  width: 600px;
+  color: #121113;
+}
+
+textarea {
+  color: #222725;
+  background-color: #9999a1;
+}
+
+input {
+  color: #222725;
+  background-color: #9999a1;
+  border-style: solid;
+}
+textarea {
+  color: #222725;
+  background-color: #9999a1;
+}
+
+button {
+  color: #222725;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~iphone media~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media screen and (max-width: 400px) {
+  /* body */
+  body {
+    min-width: 350px;
+    max-width: 300px;
+  }
+
+  /* nav */
+
+  nav {
+    padding: 8px;
+    border-width: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .flexit {
+    padding: 10px;
+  }
+
+  p {
+    max-height: 1900px;
+    max-width: 900px;
+  }
+
+  /* classes */
+
+  #SWiftlogo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    width: 250px;
+  }
+
+  img {
+    justify-content: center;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  .pargrids {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
